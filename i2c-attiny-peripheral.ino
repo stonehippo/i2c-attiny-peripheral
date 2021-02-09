@@ -13,7 +13,7 @@ void loop() {
 	analogWrite(1, map(readValue,0,1023,0,255));
 }
 
-void wireRequest(int bytes) {
+void wireRequest() {
 	byte data[] = {highByte(readValue), lowByte(readValue)};
 	Wire.write(data,2);
 }
