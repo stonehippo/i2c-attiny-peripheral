@@ -9,6 +9,7 @@ volatile word readValue = 0;
 void setup() {
 	Wire.begin(0x15);
 	Wire.onRequest(wireRequest);
+	Wire.onReceive(wireReceive);
 	pinMode(1, OUTPUT);
 }
 
@@ -20,5 +21,11 @@ void loop() {
 void wireRequest() {
 	byte data[] = {highByte(readValue), lowByte(readValue)};
 	Wire.write(data,2);
+}
+
+void wireReceive(int numberOfBytesIn) {
+	while(Wire.available()) {
+		char in = Wire.read();
+	}
 }
 
