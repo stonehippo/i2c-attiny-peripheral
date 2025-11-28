@@ -1,8 +1,8 @@
 #include <Wire.h>
 
 // Use port/pin references (as recommened for ATTinyCore 1.4.0+)
-#define ADC	PIN_PB4
-#define OUT PIN_PB1
+#define ADC_PIN	PIN_PB4
+#define OUT_PIN PIN_PB1
 
 volatile word readValue = 0;
 
@@ -14,8 +14,8 @@ void setup() {
 }
 
 void loop() {
-	readValue = analogRead(ADC);
-	analogWrite(OUT, map(readValue,0,1023,0,255));
+	readValue = analogRead(ADC_PIN);
+	analogWrite(OUT_PIN, map(readValue,0,1023,0,255));
 }
 
 void wireRequest() {
