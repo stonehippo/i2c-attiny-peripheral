@@ -19,3 +19,9 @@ To install the ATTinyCore core in the Arduino CLI:
 arduino-cli config add board_manager.additional_urls https://raw.githubusercontent.com/SpenceKonde/ReleaseScripts/refs/heads/master/package_drazzy.com_index.json
 arduino-cli core install ATTinyCore:avr
 ```
+
+There is also a [PlatfromIO](https://platformio.org) condig, so you can build this like so:
+
+```
+pio run
+```

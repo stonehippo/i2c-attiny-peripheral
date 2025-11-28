@@ -1,1 +1,1 @@
-arduino-cli upload -b ATTinyCore:avr:attinyx5 --programmer usbtinyisp
+arduino-cli upload -b ATTinyCore:avr:attinyx5 --programmer usbtinyisp .src/i2c-attiny-perihperal.ino
