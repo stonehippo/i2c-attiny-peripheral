@@ -1,6 +1,6 @@
 # Attiny85 I2C Peripheral
 
-This is a simple I2C perihperhal device on the ATTiny85, implented
+This is a simple I2C perihperhal device on the ATTiny85, implemented
 via the[ ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) Arduino core.
 
 This code is meant as a template for building I2C periperhal devices using at
