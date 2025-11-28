@@ -1,0 +1,1 @@
+arduino-cli upload -b ATTinyCore:avr:attinyx5 --programmer usbtinyisp
