@@ -2,8 +2,8 @@
 #include <Wire.h>
 
 // Use port/pin references (as recommened for ATTinyCore 1.4.0+)
-#define ADC_PIN	PIN_PB4
 #define OUT_PIN PIN_PB1
+#define ADC_PIN	A2
 
 // The address of this device on the I2C bus
 const int address = 0x15;
