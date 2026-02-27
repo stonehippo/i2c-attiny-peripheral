@@ -25,3 +25,7 @@ There is also a [PlatformIO](https://platformio.org) config, so you can build th
 ```
 pio run
 ```
+
+## pinout
+
+The i2c peripheral uses PB0 for SDA and pin PB2 for SCL, which are the standard I2C pins for ATTinyCore. See the [ATTinyCore ATTiny 85 documentation for a pinout visual](https://github.com/SpenceKonde/ATTinyCore/blob/v2.0.0-devThis-is-the-head-submit-PRs-against-this/avr/extras/ATtiny_x5.md).
